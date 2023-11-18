@@ -23,9 +23,12 @@ function App() {
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
+    
 
     return () => clearTimeout(timer);
   }, []);
+  document.title = 'Prin Port';
+
 
   return (
     <Router>
